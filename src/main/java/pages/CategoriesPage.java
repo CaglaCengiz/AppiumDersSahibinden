@@ -8,15 +8,19 @@ public class CategoriesPage {
 
     ElementHelper elementHelper;
 
-    By tabs = By.id("com.sahibinden:id/util_primary_text");
+    By title = By.id("android:id/action_bar");
+    By categories = By.id("android:id/text1");
 
     public CategoriesPage(WebDriver driver) {
         this.elementHelper = new ElementHelper(driver);
     }
 
-    public void clickTab(String tab) {
-        elementHelper.clickElementWithText(tabs,tab);
+
+    public void clickCategoriesPage() {
+        elementHelper.checkElement(title);
     }
 
-
+    public void clickCategory(String category) {
+        elementHelper.clickElementWithText(categories,category);
+    }
 }

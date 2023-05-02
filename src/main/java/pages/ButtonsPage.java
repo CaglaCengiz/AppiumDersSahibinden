@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.ElementHelper;
 
-public class PopupPage {
+public class ButtonsPage {
 
     ElementHelper elementHelper;
 
@@ -14,7 +14,7 @@ public class PopupPage {
     By switchBut = By.className("android.widget.ToggleButton");
 
 
-    public PopupPage(WebDriver driver) {
+    public  ButtonsPage(WebDriver driver) {
         this.elementHelper = new ElementHelper(driver);
     }
 
